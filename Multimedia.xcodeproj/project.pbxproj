@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0498A9226E495400BB3DDB /* FilterSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0498A8226E495400BB3DDB /* FilterSettingsTableViewController.swift */; };
+		0D0498AB226F512A00BB3DDB /* MTLTexture+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0498AA226F512A00BB3DDB /* MTLTexture+UIImage.swift */; };
+		0D2DC72E226C754600280574 /* UIImage+scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2DC72D226C754600280574 /* UIImage+scale.swift */; };
+		0D2DC730226C78AD00280574 /* RobastFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2DC72F226C78AD00280574 /* RobastFilterView.swift */; };
+		0D2DC732226C984600280574 /* GrayWorldFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2DC731226C984600280574 /* GrayWorldFilterView.swift */; };
 		0DD4F285226368BA007DABC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4F284226368BA007DABC5 /* AppDelegate.swift */; };
 		0DD4F287226368BA007DABC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4F286226368BA007DABC5 /* ViewController.swift */; };
 		0DD4F28A226368BA007DABC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD4F288226368BA007DABC5 /* Main.storyboard */; };
 		0DD4F28C226368BD007DABC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD4F28B226368BD007DABC5 /* Assets.xcassets */; };
 		0DD4F28F226368BD007DABC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD4F28D226368BD007DABC5 /* LaunchScreen.storyboard */; };
+		0DD4F297226368DA007DABC5 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4F296226368DA007DABC5 /* FilterView.swift */; };
+		0DD4F29B22637762007DABC5 /* Filters.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4F29A22637762007DABC5 /* Filters.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0498A8226E495400BB3DDB /* FilterSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSettingsTableViewController.swift; sourceTree = "<group>"; };
+		0D0498AA226F512A00BB3DDB /* MTLTexture+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTLTexture+UIImage.swift"; sourceTree = "<group>"; };
+		0D2DC72D226C754600280574 /* UIImage+scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+scale.swift"; sourceTree = "<group>"; };
+		0D2DC72F226C78AD00280574 /* RobastFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobastFilterView.swift; sourceTree = "<group>"; };
+		0D2DC731226C984600280574 /* GrayWorldFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayWorldFilterView.swift; sourceTree = "<group>"; };
 		0DD4F281226368BA007DABC5 /* Multimedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multimedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD4F284226368BA007DABC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DD4F286226368BA007DABC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +34,8 @@
 		0DD4F28B226368BD007DABC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DD4F28E226368BD007DABC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DD4F290226368BD007DABC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DD4F296226368DA007DABC5 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		0DD4F29A22637762007DABC5 /* Filters.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Filters.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,7 @@
 			children = (
 				0DD4F283226368BA007DABC5 /* Multimedia */,
 				0DD4F282226368BA007DABC5 /* Products */,
+				889BFC9A305481833F83082E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +71,26 @@
 			children = (
 				0DD4F284226368BA007DABC5 /* AppDelegate.swift */,
 				0DD4F286226368BA007DABC5 /* ViewController.swift */,
+				0DD4F296226368DA007DABC5 /* FilterView.swift */,
+				0D2DC72F226C78AD00280574 /* RobastFilterView.swift */,
+				0D2DC731226C984600280574 /* GrayWorldFilterView.swift */,
+				0D2DC72D226C754600280574 /* UIImage+scale.swift */,
+				0D0498A8226E495400BB3DDB /* FilterSettingsTableViewController.swift */,
+				0D0498AA226F512A00BB3DDB /* MTLTexture+UIImage.swift */,
 				0DD4F288226368BA007DABC5 /* Main.storyboard */,
+				0DD4F29A22637762007DABC5 /* Filters.metal */,
 				0DD4F28B226368BD007DABC5 /* Assets.xcassets */,
 				0DD4F28D226368BD007DABC5 /* LaunchScreen.storyboard */,
 				0DD4F290226368BD007DABC5 /* Info.plist */,
 			);
 			path = Multimedia;
+			sourceTree = "<group>";
+		};
+		889BFC9A305481833F83082E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0498A9226E495400BB3DDB /* FilterSettingsTableViewController.swift in Sources */,
 				0DD4F287226368BA007DABC5 /* ViewController.swift in Sources */,
+				0D2DC72E226C754600280574 /* UIImage+scale.swift in Sources */,
+				0DD4F297226368DA007DABC5 /* FilterView.swift in Sources */,
 				0DD4F285226368BA007DABC5 /* AppDelegate.swift in Sources */,
+				0D0498AB226F512A00BB3DDB /* MTLTexture+UIImage.swift in Sources */,
+				0DD4F29B22637762007DABC5 /* Filters.metal in Sources */,
+				0D2DC732226C984600280574 /* GrayWorldFilterView.swift in Sources */,
+				0D2DC730226C78AD00280574 /* RobastFilterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,11 +321,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3WBMTG67K;
 				INFOPLIST_FILE = Multimedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.voronov.Multimedia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voronov.Multimedia1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,11 +340,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3WBMTG67K;
 				INFOPLIST_FILE = Multimedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.voronov.Multimedia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voronov.Multimedia1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

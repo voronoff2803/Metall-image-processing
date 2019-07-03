@@ -15,7 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let mainController = ViewController() as UIViewController
+        mainController.title = "Filters sandbox"
+        let navigationController = UINavigationController(rootViewController: mainController)
+        navigationController.navigationBar.backgroundColor = .black
+        navigationController.navigationBar.barTintColor = .black
+        navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController.navigationBar.tintColor = .white
+        navigationController.navigationBar.isTranslucent = false
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
         return true
     }
 
